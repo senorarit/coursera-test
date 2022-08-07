@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+}
+.column {
+  float:left;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid black;
+  display: inline-table;
+  margin: 0 20px;
+}
+.column h3{
+  text-align: right;
+} 
+.column p {
+  text-align: left;
+}
+.row {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.Dog{
+  background-color: aqua;
+}
+.Cat{
+  background-color: pink;
+}
+.Tiger{
+  background-color: burlywood;
+}
+.row{
+  padding: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .column{
+    margin: 5px;
+  }
+  .Dog {
+    width: 48%;
+  }
+  .Cat{
+    width: 48%;
+  }
+  .Tiger{
+    width: 98%;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
